@@ -1,0 +1,82 @@
+body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  margin-left: 22px;
+}
+
+.trending {
+  width: 100%;
+  overflow-x: scroll;
+  display: table-row;
+}
+
+.mainCard {
+  height: 300px;
+  background-color: aqua;
+  border-radius: 10px;
+  float: left;
+  margin-left: 22px;
+}
+
+.cardImage {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  margin-top: 19px;
+}
+
+.cardContent {
+  padding: 10px;
+}
+
+.cardTitle {
+  font-size: 20px;
+  margin-top: 13px;
+}
+
+.cardText {
+  margin-top: 5px;
+  font-size: 13px;
+}
+
+.smallCard {
+  height: 45px;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: lightgray;
+  border-radius: 11px;
+  margin: 5px 7px;
+}
+
+.smallCardImage {
+  display: inline-flex;
+  margin: 12px 0 0 10px;
+}
+
+.smallCardContent {
+  display: inline-flex;
+  margin-left: 12px;
+  font-size: 20px;
+}
+
+.row {
+  display:table-row;
+  white-space: nowrap;
+  overflow: scroll;
+  margin-left: 15px;
+}
+
+.YourPicksRows {
+  overflow-x: scroll;
+  display: block;
+}
