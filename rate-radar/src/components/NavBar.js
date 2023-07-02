@@ -1,23 +1,29 @@
-import { Nav, Navbar } from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
+import movieReel from './../imgs/movieReel.svg'
+import tvShow from './../imgs/tvShows.svg'
+import music from './../imgs/music.svg'
+import book from './../imgs/book.svg'
 
 function NavBar() {
-    return (
-        <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand href="/">Ottawa Tutoring</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/Services">Our Tutors</Nav.Link>
-              <Nav.Link href='/StudyGroups'>Study Groups</Nav.Link>
-              <Nav.Link href="/Aboutus">About us</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    );
+  return (
+    <div className="navbar">
+      <div className="navItem">
+        <img src={movieReel} alt="" width={40} height={40}/>
+        <p className="navText">Movies</p>
+      </div>
+      <div className="navItem">
+        <img src={tvShow} alt="" width={40} height={40}/>
+        <p className="navText">TV Shows</p>
+      </div>
+      <div className="navItem">
+        <img src={music} alt="" width={40} height={40}/>
+        <p className="navText">Music</p>
+      </div>
+      <div className="navItem">
+        <img src={book} alt="" width={40} height={40}/>
+        <p className="navText">Books</p>
+      </div>
+    </div>
+  );
 }
 
 export default NavBar

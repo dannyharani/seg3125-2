@@ -11,22 +11,66 @@ h2 {
   margin-left: 22px;
 }
 
-.trending {
+p {
+  font-size: 15px;
+}
+
+/* 
+  Search Card
+*/
+
+.mainSearch {
+  width: 76%;
+  margin: auto;
+  display: block;
+  background: url(./../public/magGlass.svg) no-repeat scroll 4px 4px;
+  background-size: 35px;
+  background-position-y: 50%;
+  background-position-x: 20px;
+  margin-top: 20px;
+  border-radius: 40px;
+  padding: 23px 24px 23px 65px;
+  font-size: 23px;
+}
+
+.searchDiv .icon {
+  position: absolute;
+}
+
+.searchDiv {
   width: 100%;
-  overflow-x: scroll;
-  display: table-row;
+}
+
+.icon {
+  min-width: 40px;
+}
+
+.icon {
+  text-align: center;
+  padding: 27px 0 0 20px;
+}
+
+/* 
+  Main Cards
+*/
+
+.trending {
+  display: block;
+  overflow: auto;
+  padding-right: 20px;
+}
+
+.cardHolder {
+  min-width: 210px;
 }
 
 .mainCard {
-  height: 300px;
   background-color: aqua;
   border-radius: 10px;
-  float: left;
-  margin-left: 22px;
+  margin-left: 20px;
 }
 
 .cardImage {
-  display: block;
   width: 150px;
   height: 150px;
   border-radius: 10px;
@@ -47,7 +91,25 @@ h2 {
 .cardText {
   margin-top: 5px;
   font-size: 13px;
+  max-width: 170px;
 }
+
+.descPill {
+  margin: 0 0 13px 10px;
+  background-color: white;
+  width: 80px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.descPill p {
+  text-align: center;
+  margin: 2px 0;
+}
+
+/* 
+  Small Cards
+*/
 
 .smallCard {
   height: 45px;
@@ -72,11 +134,88 @@ h2 {
 .row {
   display:table-row;
   white-space: nowrap;
-  overflow: scroll;
+  overflow: auto;
   margin-left: 15px;
 }
 
 .YourPicksRows {
-  overflow-x: scroll;
+  overflow-x: auto;
   display: block;
+}
+
+/* 
+  Media Description
+*/
+
+.tmpImage {
+  border-radius: 12px;
+  background-color: black;
+  margin-left: 13px;
+}
+
+.mediaDesc {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  background-color: lightgreen;
+  border-radius: 14px;
+  height: 280px;
+  overflow: hidden;
+}
+
+.leftMediaDesc {
+  position: absolute;
+  display: inline-block;
+  width: 45%;
+  top: 20px;
+  left: 10px;
+}
+
+.rightMediaDesc {
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  display: inline-block;
+  width: 45%;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.pillContainer {
+  margin-top: 20px;
+}
+
+.leftMediaDesc .pillContainer {
+  display: inline-block;
+}
+
+.descTitle {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* 
+  Navbar
+*/
+
+.Home {
+  margin-bottom: 120px;
+}
+
+.navbar {
+  width: 100%;
+  display: table;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+}
+
+.navItem {
+  display: table-cell;
+  text-align: center;
+  width: 75px;
+}
+
+.navText {
+  margin: 6px 0 5px 0;
 }
