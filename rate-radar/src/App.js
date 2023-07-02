@@ -7,7 +7,7 @@ import Searchbar from './components/Searchbar';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Searchbar/>
       <div className="App">
       
