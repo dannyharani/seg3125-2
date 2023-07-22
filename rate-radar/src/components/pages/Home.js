@@ -3,6 +3,18 @@ import { useState } from 'react';
 import './../styles/Home.css'
 import MainCard from '../MainCard';
 import SmallCard from '../SmallCard';
+import data from './../../Data/data';
+
+function trending() {
+    let arr = [];
+    for (var i = 0; i < 3; i++) {
+        let index = Math.floor(Math.random * )
+        arr.push(<MainCard title={}/>)
+    }
+    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Action"} pill2={"Netflix"}/>
+    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Drama"} pill2={"Prime"} />
+    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Drama"} pill2={"Prime"} />
+}
 
 function Home() {
     const [browsingMode, setBrowsingMode] = useState(true);
@@ -15,9 +27,6 @@ function Home() {
             <div className='Home'>
                 <h2>Trending</h2>
                 <div className='trending'>
-                    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Action"} pill2={"Netflix"}/>
-                    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Drama"} pill2={"Prime"} />
-                    <MainCard image={'#'} title={'Movie Title'} content={'Descriptive Text about the media described above...'} pill1={"Drama"} pill2={"Prime"} />
                 </div>
     
                 <div className='YourPicks'>

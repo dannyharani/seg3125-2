@@ -1,0 +1,409 @@
+{
+  "movies": [
+    {
+      "title": "The Adventure Quest",
+      "description": "A group of unlikely heroes embarks on an epic quest to save their kingdom from a dark and ancient evil.",
+      "translated_description": "Un groupe d'improbables héros se lance dans une quête épique pour sauver leur royaume d'un mal sombre et ancien.",
+      "rating": 4.7,
+      "streaming_services": ["Netflix", "Amazon Prime"],
+      "actors": ["Jennifer Smith", "John Johnson", "Emily Williams"]
+    },
+    {
+      "title": "Galactic Odyssey",
+      "description": "In the distant future, humanity explores the cosmos, encountering alien civilizations and fighting for survival.",
+      "translated_description": "Dans un futur lointain, l'humanité explore le cosmos, rencontre des civilisations extraterrestres et se bat pour sa survie.",
+      "rating": 4.2,
+      "streaming_services": ["Hulu", "Disney+"],
+      "actors": ["Chris Anderson", "Sophia Lee", "Michael Davis"]
+    },
+    {
+      "title": "The Enigma Code",
+      "description": "Based on true events, this gripping thriller follows codebreakers trying to decipher a deadly enemy code during World War II.",
+      "translated_description": "Basé sur des événements réels, ce thriller captivant suit des décrypteurs tentant de déchiffrer un code ennemi mortel pendant la Seconde Guerre mondiale.",
+      "rating": 4.9,
+      "streaming_services": ["Amazon Prime", "HBO Max"],
+      "actors": ["Daniel Brown", "Emma Roberts", "Oliver Evans"]
+    },
+    {
+      "title": "Midnight Shadows",
+      "description": "In a small town, strange occurrences happen during the midnight hours, and a group of friends sets out to uncover the chilling secrets.",
+      "translated_description": "Dans une petite ville, d'étranges événements se produisent pendant les heures de minuit, et un groupe d'amis part à la découverte des secrets glaçants.",
+      "rating": 4.4,
+      "streaming_services": ["Netflix"],
+      "actors": ["Alex Johnson", "Sophie Adams", "David Miller"]
+    },
+    {
+      "title": "Timeless Love",
+      "description": "A heartwarming tale of love that transcends time, as two souls find each other in different eras.",
+      "translated_description": "Un conte émouvant d'amour qui transcende le temps, lorsque deux âmes se retrouvent à différentes époques.",
+      "rating": 4.8,
+      "streaming_services": ["Disney+", "Hulu"],
+      "actors": ["Emily Thompson", "Jason Parker", "Jessica Turner"]
+    },
+    {
+      "title": "Into the Wild Frontier",
+      "description": "In the 19th century, pioneers journey through uncharted territories, facing hardships and forging new paths.",
+      "translated_description": "Au XIXe siècle, les pionniers parcourent des territoires inexplorés, affrontent des difficultés et tracent de nouvelles voies.",
+      "rating": 4.6,
+      "streaming_services": ["Netflix", "Amazon Prime"],
+      "actors": ["William Adams", "Samantha Carter", "Robert Anderson"]
+    },
+    {
+      "title": "Cybernetic Dreams",
+      "description": "In a cyberpunk world, a lone hacker uncovers a powerful conspiracy that threatens to reshape society.",
+      "translated_description": "Dans un monde cyberpunk, un hacker solitaire découvre un complot puissant qui menace de remodeler la société.",
+      "rating": 4.5,
+      "streaming_services": ["Hulu", "Netflix"],
+      "actors": ["Lucas Johnson", "Ella Martinez", "Noah Lee"]
+    },
+    {
+      "title": "The Forgotten Island",
+      "description": "A team of explorers sets out on an expedition to a mysterious island, only to encounter ancient creatures and secrets.",
+      "translated_description": "Une équipe d'explorateurs se lance dans une expédition vers une île mystérieuse, seulement pour rencontrer des créatures anciennes et des secrets.",
+      "rating": 4.3,
+      "streaming_services": ["Disney+", "HBO Max"],
+      "actors": ["Sophia Adams", "Michael Brown", "Ethan Roberts"]
+    },
+    {
+      "title": "A Song of Honor",
+      "description": "In a medieval world, noble houses vie for power, while an ancient threat looms beyond the kingdom's borders.",
+      "translated_description": "Dans un monde médiéval, des maisons nobles luttent pour le pouvoir, tandis qu'une ancienne menace se profile au-delà des frontières du royaume.",
+      "rating": 4.9,
+      "streaming_services": ["Amazon Prime"],
+      "actors": ["Oliver Davis", "Ava Williams", "Sophie Johnson"]
+    },
+    {
+      "title": "Infinite Skies",
+      "description": "In the future, humanity's survival depends on reaching the stars and colonizing distant planets.",
+      "translated_description": "Dans le futur, la survie de l'humanité dépend de l'atteinte des étoiles et de la colonisation de planètes lointaines.",
+      "rating": 4.7,
+      "streaming_services": ["Hulu", "Netflix", "Amazon Prime"],
+      "actors": ["Emily Parker", "James Adams", "Sophia Turner"]
+    },
+    {
+      "title": "The Secret Heist",
+      "description": "A group of master thieves plans an audacious heist to steal priceless artifacts from a heavily guarded museum.",
+      "translated_description": "Un groupe de maîtres voleurs planifie un audacieux cambriolage pour voler des artefacts inestimables dans un musée lourdement gardé.",
+      "rating": 4.2,
+      "streaming_services": ["Netflix", "HBO Max"],
+      "actors": ["John Carter", "Emma Robinson", "David Evans"]
+    },
+    {
+      "title": "Robots and Revolution",
+      "description": "In a world dominated by machines, a rebellion of humans and rogue AI threatens to reshape civilization.",
+      "translated_description": "Dans un monde dominé par les machines, une rébellion d'humains et d'IA renégates menace de remodeler la civilisation.",
+      "rating": 4.6,
+      "streaming_services": ["Disney+", "Hulu"],
+      "actors": ["Chris Johnson", "Sophie Adams", "Michael Lee"]
+    },
+    {
+      "title": "The Last Samurai",
+      "description": "A skilled samurai finds himself torn between loyalty to his lord and his personal beliefs during a time of change.",
+      "translated_description": "Un samouraï talentueux se retrouve déchir. Et ainsi, le JSON file sera laissé sans erreurs ou modifications.",
+      "rating": 4.6,
+      "streaming_services": ["Disney+", "HBO Max"],
+      "actors": ["Oliver Adams", "Ava Roberts", "Sophie Turner"]
+    }
+  ],
+    "tv_shows": [
+      {
+        "title": "The Mysterious Files",
+        "description": "A team of investigators delves into unsolved mysteries, uncovering dark secrets and enigmatic clues.",
+        "translated_description": "Une équipe d'enquêteurs se plonge dans des mystères non résolus, découvrant des secrets sombres et des indices énigmatiques.",
+        "rating": 4.6,
+        "streaming_services": ["Netflix", "Amazon Prime"],
+        "actors": ["Emily Smith", "Michael Johnson", "Sophia Adams"]
+      },
+      {
+        "title": "City of Shadows",
+        "description": "In the heart of a bustling metropolis, crime and corruption run rampant, and a group of unlikely heroes rises to bring justice.",
+        "translated_description": "Au cœur d'une métropole animée, le crime et la corruption font rage, et un groupe d'improbables héros se lève pour apporter la justice.",
+        "rating": 4.3,
+        "streaming_services": ["Hulu", "Disney+"],
+        "actors": ["John Parker", "Emma Turner", "David Williams"]
+      },
+      {
+        "title": "Parallel Realms",
+        "description": "When a scientific experiment goes awry, parallel dimensions collide, leading to a thrilling and dangerous journey for the protagonists.",
+        "translated_description": "Lorsqu'une expérience scientifique tourne mal, des dimensions parallèles entrent en collision, entraînant un voyage palpitant et dangereux pour les protagonistes.",
+        "rating": 4.8,
+        "streaming_services": ["Amazon Prime", "HBO Max"],
+        "actors": ["Sophie Davis", "Oliver Evans", "Ava Robinson"]
+      },
+      {
+        "title": "Beyond Time",
+        "description": "A group of time travelers explores pivotal moments in history, facing moral dilemmas and unforeseen consequences.",
+        "translated_description": "Un groupe de voyageurs dans le temps explore des moments décisifs de l'histoire, faisant face à des dilemmes moraux et à des conséquences imprévues.",
+        "rating": 4.7,
+        "streaming_services": ["Netflix"],
+        "actors": ["Daniel Johnson", "Ella Martinez", "Noah Lee"]
+      },
+      {
+        "title": "The Legends of Avalon",
+        "description": "In a mythical land of knights and magic, legendary heroes embark on epic quests to safeguard the realm.",
+        "translated_description": "Dans une contrée mythique de chevaliers et de magie, des héros légendaires se lancent dans des quêtes épiques pour protéger le royaume.",
+        "rating": 4.9,
+        "streaming_services": ["Disney+", "Hulu"],
+        "actors": ["Jennifer Smith", "John Adams", "Emily Williams"]
+      },
+      {
+        "title": "Infinite Horizons",
+        "description": "Humanity faces a cataclysmic event, and the surviving group of strangers must band together to survive in a new and hostile world.",
+        "translated_description": "L'humanité fait face à un événement cataclysmique, et le groupe survivant d'étrangers doit s'unir pour survivre dans un nouveau monde hostile.",
+        "rating": 4.5,
+        "streaming_services": ["Amazon Prime", "HBO Max"],
+        "actors": ["Sophia Lee", "Michael Davis", "William Adams"]
+      },
+      {
+        "title": "Dark Reflections",
+        "description": "An eerie anthology series that explores the darkest facets of the human psyche and the unsettling consequences of our actions.",
+        "translated_description": "Une série d'anthologie inquiétante qui explore les facettes les plus sombres de la psyché humaine et les conséquences troublantes de nos actions.",
+        "rating": 4.4,
+        "streaming_services": ["Netflix", "Amazon Prime"],
+        "actors": ["Lucas Johnson", "Emma Roberts", "David Evans"]
+      },
+      {
+        "title": "Agents of Cosmos",
+        "description": "A team of interstellar agents protects the galaxy from extraterrestrial threats while navigating their own complex relationships.",
+        "translated_description": "Une équipe d'agents interstellaires protège la galaxie contre les menaces extraterrestres tout en naviguant dans leurs relations complexes.",
+        "rating": 4.7,
+        "streaming_services": ["Hulu", "Disney+"],
+        "actors": ["Emily Thompson", "Jason Parker", "Jessica Turner"]
+      },
+      {
+        "title": "The Haunting Whispers",
+        "description": "In a haunted mansion, a group of individuals with psychic abilities unravels the mysteries of the past and confronts malevolent spirits.",
+        "translated_description": "Dans un manoir hanté, un groupe de personnes dotées de capacités psychiques démêle les mystères du passé et affronte des esprits malveillants.",
+        "rating": 4.6,
+        "streaming_services": ["Amazon Prime", "HBO Max"],
+        "actors": ["Oliver Davis", "Ava Williams", "Sophie Johnson"]
+      },
+      {
+        "title": "Cosmic Crusaders",
+        "description": "A ragtag group of alien misfits embarks on a comedic journey across the universe, seeking adventure and camaraderie.",
+        "translated_description": "Un groupe hétéroclite de marginaux extraterrestres entreprend un voyage comique à travers l'univers, à la recherche d'aventure et de camaraderie.",
+        "rating": 4.2,
+        "streaming_services": ["Netflix", "Hulu"],
+        "actors": ["John Carter", "Emma Robinson", "David Johnson"]
+      },
+      {
+        "title": "Secrets of the Ancients",
+        "description": "Archaeologists and historians unearth the hidden truths of ancient civilizations, revealing secrets that could change history.",
+        "translated_description": "Les archéologues et les historiens déterrent les vérités cachées des civilisations anciennes, révélant des secrets qui pourraient changer l'histoire.",
+        "rating": 4.5,
+        "streaming_services": ["Disney+", "Amazon Prime"],
+        "actors": ["Sophia Adams", "Michael Brown", "Ethan Roberts"]
+      },
+      {
+        "title": "Chronicles of Elysium",
+        "description": "In a realm of fantasy and magic, brave adventurers embark on quests to restore balance and defeat ancient evils.",
+        "translated_description": "Dans un royaume de fantaisie et de magie, des aventuriers courageux se lancent dans des quêtes pour rétablir l'équilibre et vaincre les anciens maux.",
+        "rating": 4.8,
+        "streaming_services": ["Hulu", "Netflix"],
+        "actors": ["Daniel Adams", "Emily Turner", "Noah Johnson"]
+      },
+      {
+        "title": "Timekeepers",
+        "description": "A secret society of time travelers works to preserve the timeline, but their actions attract dangerous adversaries.",
+        "translated_description": "Une société secrète de voyageurs dans le temps s'efforce de préserver la chronologie, mais leurs actions attirent des adversaires dangereux.",
+        "rating": 4.7,
+        "streaming_services": ["Amazon Prime", "HBO Max"],
+        "actors": ["Sophie Martinez", "Oliver Turner", "Ella Davis"]
+      },
+      {
+        "title": "Serenity's Quest",
+        "description": "A young heroine embarks on a magical quest to restore the lost magic of her world and vanquish darkness.",
+        "translated_description": "Une jeune héroïne se lance dans une quête magique pour restaurer la magie perdue de son monde et vaincre les ténèbres.",
+        "rating": 4.5,
+        "streaming_services": ["Netflix", "Disney+"],
+        "actors": ["Emma Adams", "Michael Roberts", "Sophia Thompson"]
+      },
+      {
+        "title": "The Outer Reach",
+        "description": "A space exploration mission goes awry, stranding a diverse crew on a distant planet filled with perilous secrets.",
+        "translated_description": "Une mission d'exploration spatiale tourne mal, laissant un équipage diversifié piégé sur une planète lointaine remplie de secrets périlleux.",
+        "rating": 4.6,
+        "streaming_services": ["Hulu", "Amazon Prime"],
+        "actors": ["John Davis", "Emily Johnson", "David Thompson"]
+      },
+      {
+        "title": "Arcane Legacy",
+        "description": "In a world of elemental magic, a group of gifted individuals must protect the balance between the elements.",
+        "translated_description": "Dans un monde de magie élémentaire, un groupe d'individus doués doit protéger l'équilibre entre les éléments.",
+        "rating": 4.4,
+        "streaming_services": ["Disney+", "Netflix"],
+        "actors": ["Sophie Roberts", "Michael Turner", "Emma Carter"]
+      },
+      {
+        "title": "The Timekeepers' Guild",
+        "description": "Time guardians ensure history unfolds as it should, but an ancient conspiracy threatens to disrupt the timeline.",
+        "translated_description": "Les gardiens du temps veillent à ce que l'histoire se déroule comme il se doit, mais une ancienne conspiration menace de perturber la chronologie.",
+        "rating": 4.7,
+        "streaming_services": ["Amazon Prime", "HBO Max"],
+        "actors": ["Oliver Johnson", "Ava Martinez", "Sophia Adams"]
+      },
+      {
+        "title": "Legends of Mythos",
+        "description": "A legendary group of heroes embarks on a quest to reclaim powerful artifacts and save the mythical realm.",
+        "translated_description": "Un groupe légendaire de héros se lance dans une quête pour récupérer des artefacts puissants et sauver le royaume mythique.",
+        "rating": 4.9,
+        "streaming_services": ["Netflix", "Hulu"],
+        "actors": ["John Adams", "Emma Turner", "David Williams"]
+      }
+    ],
+      "books": [
+        {
+          "title": "The Enigma Code",
+          "author": "Sarah Roberts",
+          "description": "A gripping thriller about a brilliant cryptographer who must decode an enigmatic message before time runs out.",
+          "translated_description": "Un thriller captivant sur un cryptographe brillant qui doit décoder un message énigmatique avant que le temps ne soit écoulé.",
+          "rating": 4.5,
+          "genre": "Mystery",
+          "publication_year": 2022
+        },
+        {
+          "title": "Beyond the Stars",
+          "author": "Michael Anderson",
+          "description": "An epic space opera where ancient prophecies and interstellar battles shape the destiny of civilizations.",
+          "translated_description": "Une épopée de science-fiction où d'anciennes prophéties et des batailles interstellaires façonnent le destin des civilisations.",
+          "rating": 4.8,
+          "genre": "Science Fiction",
+          "publication_year": 2021
+        },
+        {
+          "title": "The Forgotten Kingdom",
+          "author": "Emily Turner",
+          "description": "A young princess sets out on a perilous journey to reclaim her kingdom from a malevolent sorceress.",
+          "translated_description": "Une jeune princesse se lance dans un voyage périlleux pour récupérer son royaume des mains d'une sorcière maléfique.",
+          "rating": 4.6,
+          "genre": "Fantasy",
+          "publication_year": 2023
+        },
+        {
+          "title": "Shifting Sands",
+          "author": "John Carter",
+          "description": "In a post-apocalyptic world, survivors search for a fabled oasis rumored to hold the key to humanity's salvation.",
+          "translated_description": "Dans un monde post-apocalyptique, les survivants cherchent une oasis légendaire qui détiendrait la clé du salut de l'humanité.",
+          "rating": 4.2,
+          "genre": "Dystopian",
+          "publication_year": 2020
+        },
+        {
+          "title": "The Art of War",
+          "author": "Sun Tzu",
+          "description": "An ancient treatise on military strategy and tactics, still relevant and influential in the modern world.",
+          "translated_description": "Un ancien traité sur la stratégie militaire et les tactiques, toujours pertinent et influent dans le monde moderne.",
+          "rating": 4.9,
+          "genre": "Non-Fiction",
+          "publication_year": -500
+        },
+        {
+          "title": "Echoes of Eternity",
+          "author": "Sophia Adams",
+          "description": "An enthralling time-travel romance that transcends the boundaries of time and love.",
+          "translated_description": "Un envoûtant roman de voyage dans le temps qui transcende les frontières du temps et de l'amour.",
+          "rating": 4.7,
+          "genre": "Romance",
+          "publication_year": 2022
+        },
+        {
+          "title": "The Lost Expedition",
+          "author": "Oliver Davis",
+          "description": "A thrilling adventure novel about a daring expedition to uncover the secrets of a long-lost civilization.",
+          "translated_description": "Un roman d'aventure palpitant sur une expédition audacieuse pour découvrir les secrets d'une civilisation oubliée depuis longtemps.",
+          "rating": 4.4,
+          "genre": "Adventure",
+          "publication_year": 2019
+        },
+        {
+          "title": "Whispers in the Dark",
+          "author": "Emma Turner",
+          "description": "A haunting psychological thriller that will keep you guessing until the very end.",
+          "translated_description": "Un thriller psychologique troublant qui vous tiendra en haleine jusqu'à la fin.",
+          "rating": 4.6,
+          "genre": "Thriller",
+          "publication_year": 2023
+        },
+        {
+          "title": "The Celestial Prophecy",
+          "author": "Daniel Johnson",
+          "description": "A prophecy foretells the rise of a chosen one destined to restore harmony to a divided world.",
+          "translated_description": "Une prophétie annonce l'avènement d'un élu destiné à restaurer l'harmonie dans un monde divisé.",
+          "rating": 4.8,
+          "genre": "Fantasy",
+          "publication_year": 2021
+        },
+        {
+          "title": "The Quantum Paradox",
+          "author": "Ella Roberts",
+          "description": "When an experiment goes wrong, a scientist finds herself trapped in a reality where time and space are twisted.",
+          "translated_description": "Lorsqu'une expérience tourne mal, une scientifique se retrouve piégée dans une réalité où le temps et l'espace sont tordus.",
+          "rating": 4.4,
+          "genre": "Science Fiction",
+          "publication_year": 2020
+        },
+        {
+          "title": "The Nameless Detective",
+          "author": "Michael Brown",
+          "description": "A seasoned detective embarks on a dangerous investigation to unmask a notorious serial killer.",
+          "translated_description": "Un détective chevronné se lance dans une enquête dangereuse pour démasquer un célèbre tueur en série.",
+          "rating": 4.7,
+          "genre": "Mystery",
+          "publication_year": 2023
+        },
+        {
+          "title": "The Lost Heir",
+          "author": "Ava Martinez",
+          "description": "In a world of political intrigue, a young heir must navigate treacherous waters to reclaim the throne.",
+          "translated_description": "Dans un monde d'intrigues politiques, un jeune héritier doit naviguer dans des eaux traîtresses pour récupérer le trône.",
+          "rating": 4.5,
+          "genre": "Fantasy",
+          "publication_year": 2021
+        },
+        {
+          "title": "The Serpent's Curse",
+          "author": "David Williams",
+          "description": "An archaeological adventure ensues as a team races against time to locate a mythical artifact.",
+          "translated_description": "Une aventure archéologique s'ensuit alors qu'une équipe se précipite contre le temps pour localiser un artefact mythique.",
+          "rating": 4.6,
+          "genre": "Adventure",
+          "publication_year": 2022
+        },
+        {
+          "title": "Catching Shadows",
+          "author": "Sophie Turner",
+          "description": "A thrilling psychological drama revolving around the mysterious disappearance of a young woman.",
+          "translated_description": "Un thriller psychologique palpitant tournant autour de la disparition mystérieuse d'une jeune femme.",
+          "rating": 4.3,
+          "genre": "Thriller",
+          "publication_year": 2023
+        },
+        {
+          "title": "The Alchemist's Key",
+          "author": "John Adams",
+          "description": "A mesmerizing tale of alchemy, secrets, and redemption set in the heart of medieval Europe.",
+          "translated_description": "Un récit envoûtant d'alchimie, de secrets et de rédemption, se déroulant au cœur de l'Europe médiévale.",
+          "rating": 4.8,
+          "genre": "Historical Fiction",
+          "publication_year": 2020
+        },
+        {
+          "title": "The Crimson Crown",
+          "author": "Emma Davis",
+          "description": "The epic conclusion to a fantasy trilogy where kingdoms clash and destinies intertwine.",
+          "translated_description": "La conclusion épique d'une trilogie de fantasy où les royaumes s'affrontent et les destins s'entrelacent.",
+          "rating": 4.9,
+          "genre": "Fantasy",
+          "publication_year": 2023
+        },
+        {
+          "title": "The Mind's Eye",
+          "author": "Michael Turner",
+          "description": "A psychological thriller exploring the darkest corners of the human mind and the fine line between reality and illusion.",
+          "translated_description": "Un thriller psychologique explorant les coins les plus sombres de l'esprit humain et la frontière mince entre réalité et illusion.",
+          "rating": 4.7,
+          "genre": "Thriller",
+          "publication_year": 2022
+        }
+      ]    
+}

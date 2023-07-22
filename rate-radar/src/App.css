@@ -20,9 +20,9 @@ p {
 */
 
 .mainSearch {
-  width: 76%;
+  width: 60%;
   margin: auto;
-  display: block;
+  display: inline;
   background: url(./../public/magGlass.svg) no-repeat scroll 4px 4px;
   background-size: 35px;
   background-position-y: 50%;
@@ -33,12 +33,20 @@ p {
   font-size: 23px;
 }
 
+.userImgMain {
+  display: inline;
+  margin-left: 6%;
+  font-size: 30px;
+  padding-top: 10px;
+
+}
+
 .searchDiv .icon {
   position: absolute;
 }
 
 .searchDiv {
-  width: 100%;
+  width: 100%
 }
 
 .icon {
@@ -169,16 +177,38 @@ p {
   width: 45%;
   top: 20px;
   left: 10px;
+  min-width: 184px;
 }
 
 .rightMediaDesc {
   position: absolute;
   right: 10px;
   top: 0px;
-  display: inline-block;
+  display: block;
   width: 45%;
   margin-left: 15px;
   margin-right: 10px;
+}
+
+@media (max-width: 420px) {
+  .leftMediaDesc {
+    display: block;
+    width: 184px;
+  }
+  .rightMediaDesc {
+    left: 20px;
+    top: 244px;
+    display: block;
+    width: 184px;
+  }
+  .mediaDesc {
+    display: block;
+    width: 250px;
+    margin: auto;
+    background-color: lightgreen;
+    border-radius: 14px;
+    height: 520px;
+  }
 }
 
 .pillContainer {
@@ -203,6 +233,7 @@ p {
 }
 
 .navbar {
+  padding-top: 6px;
   width: 100%;
   display: table;
   position: fixed;
@@ -218,4 +249,28 @@ p {
 
 .navText {
   margin: 6px 0 5px 0;
+}
+
+.review-container {
+  background-color: #B5E9E6;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 7px;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+.review-container p {
+  margin: 0;
+  margin-top: 7px;
+}
+
+.userAndStars {
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.userImg {
+  position: relative;
+  top: -10px;
 }
