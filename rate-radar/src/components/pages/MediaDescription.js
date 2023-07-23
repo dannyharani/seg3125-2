@@ -24,6 +24,14 @@ function getCards(type, data)
     return arr;
 }
 
+function genCrit(type) {
+    var reviewData = allRevData[type];
+    let rand = Math.floor(Math.random() * reviewData.length)
+
+    return(<UserReviews color={"rgba(86, 193, 255, 0.354)"} title={reviewData[rand].title} reviewer={reviewData[rand].userName} stars={reviewData[rand].rating} review={reviewData[rand].review}/>)
+}
+
+
 function genReviews(type, color) {
     var arr = []
     var used = []
@@ -141,6 +149,7 @@ function MediaDescription () {
                         {desc}
                         </p>
                         <div>
+                        <p className="critiqueScore">Critique Score</p>
                         {
                             Array.from({ length: stars }, (_, index) => (
                                 <span style={{ color:'#D96417', display:'inline'}}>
@@ -179,6 +188,12 @@ function MediaDescription () {
                     <h2>Write a Review</h2>
                     <div className="reviewForm" style={{'backgroundColor':color}}>
                         <ReviewForm color={color}/>
+                    </div>
+                </div>
+                <div>
+                    <h2>Top Critique Review</h2>
+                    <div className='userReviews'>
+                        {genCrit(mediaType)}
                     </div>
                 </div>
                 </div>
