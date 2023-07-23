@@ -1,11 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faUser} from "@fortawesome/free-solid-svg-icons"
-
-function Searchbar () {
+function Searchbar ({updateQuery}) {
     return (
         <div className="searchDiv">
-            <input className="mainSearch" type="text" placeholder="Search..."/>
-            <FontAwesomeIcon className="userImgMain" icon={faUser}/>
+            <input onChange={(e) => {updateQuery(e.target.value)}} className="mainSearch" type="text" placeholder="Search..."/>
         </div>
     );
 }

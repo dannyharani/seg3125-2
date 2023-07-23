@@ -1,7 +1,7 @@
-function Pill({text}) {
+function Pill({text, shadowColor}) {
     return (
-        <div className="descPill">
-            <p>{text}</p>
+        <div className="descPill" style={{'boxShadow':shadowColor}}>
+            <p title={text}>{text}</p>
         </div>
     )
 }

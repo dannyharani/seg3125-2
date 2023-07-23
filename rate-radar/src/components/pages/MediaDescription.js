@@ -4,78 +4,214 @@ import {faStar} from "@fortawesome/free-solid-svg-icons"
 import SmallCard from "../SmallCard";
 import UserReviews from "../UserReview";
 import {faStar as faStarRegular} from "@fortawesome/free-regular-svg-icons"
+import jsonData from './../../Data/data';
+import allRevData from './../../Data/reviews'
+import ReviewForm from "./../ReviewForm";
 
-function MediaDescription (mediaAddr) {
-    return (
-        <div className="Home">
-            <div>
-                <h2>Description</h2>
-            </div>
-            <div className="mediaDesc">
-                <div className="leftMediaDesc">
-                    <img alt="" className="tmpImage" style={{width:150, height: 150}}/>
-                    <div className="pillContainer">
-                        <Pill text={"Random"}/>
-                        <Pill text={"Random"}/>
-                        <Pill text={"Random"}/>
-                        <Pill text={"Random"}/>
+function getCards(type, data)
+{
+    var arr = []
+    if (type === 'movies') {
+        for (let i = 0; i < data.actors.length; i++) {
+            arr.push(<SmallCard title={data.actors[i]}/>);
+        }
+    } else if (type === 'tv_shows') {
+        for (let i = 0; i < data.actors.length; i++) {
+            arr.push(<SmallCard title={data.actors[i]}/>);
+        }
+    }
+    return arr;
+}
+
+function genReviews(type, color) {
+    var arr = []
+    var used = []
+
+    var reviewData = allRevData[type];
+
+    for (var i = 0; i < Math.floor(Math.random() * 7) + 3; i++) {
+        var rand = Math.floor(Math.random() * reviewData.length);
+        if (!used.includes(rand)) {
+            arr.push(<UserReviews color={color} title={reviewData[rand].title} reviewer={reviewData[rand].userName} stars={reviewData[rand].rating} review={reviewData[rand].review}/>)
+        }
+    }
+
+    return arr;
+}
+
+function MediaDescription () {
+
+    /**
+     * GETTING ALL FIELDS FOR THIS MEDIA
+     */
+    const queryParams = new URLSearchParams(window.location.search)
+    const mediaType = decodeURIComponent(queryParams.get('mediaType'));
+    const title = decodeURIComponent(queryParams.get('title'));
+    const color = decodeURIComponent(queryParams.get('color'));
+    const lang = decodeURIComponent(queryParams.get('lang'));
+
+    const dataGeneric = jsonData[mediaType];
+    var data, imgUrl, rating, stars, desc;
+
+    
+    for (var i = 0; i < dataGeneric.length; i++)
+    {
+        if (dataGeneric[i].title === title) {
+            data = dataGeneric[i];
+            rating = data.rating;
+            stars = (rating*10)%10 > 5 ? Math.ceil(rating) : Math.floor(rating);
+            desc = lang === 'true' ? data.description : data.translated_description;
+            imgUrl = data.img;
+            break;
+        }
+    }
+
+    var pill1, pill2, pill3, pill4;
+
+    if (mediaType === 'movies' || mediaType === 'tv_shows') {
+        pill1 = data.genre.split(',')[0] !== undefined ? data.genre.split(',')[0] : "Genre"
+        pill2 = data.genre.split(',')[1] !== undefined ? data.genre.split(',')[1] : "Genre"
+        pill3 = data.streaming_services[0] !== undefined ? data.streaming_services[0] : "Stream"
+        pill4 = data.streaming_services[1] !== undefined ? data.streaming_services[1] : "Stream"
+    } else if (mediaType === 'books') {
+        // rating genre episodes and host
+        pill1 = data.genre
+        pill2 = data.rating
+        pill3 = data.publication_year
+        pill4 = data.author
+    } else if (mediaType === 'podcasts') {
+        // rating genre episodes and host
+        pill1 = data.genre
+        pill2 = data.rating
+        pill3 = data.episodes + ' eps'
+        pill4 = data.host
+    }
+
+    if(mediaType === 'movies' || mediaType === 'tv_shows')
+    {
+        return (
+            <div className="Home">
+                <div>
+                    <h2>Description</h2>
+                </div>
+                <div className="mediaDesc" style={{'backgroundColor':color}}>
+                    <div className="leftMediaDesc">
+                        <img src={imgUrl} alt="" className="tmpImage" style={{width:150, height: 150}}/>
+                        <div className="pillContainer">
+                            <Pill text={pill1}/>
+                            <Pill text={pill2}/>
+                            <Pill text={pill3}/>
+                            <Pill text={pill4}/>
+                        </div>
+                    </div>
+                    <div className="rightMediaDesc">
+                        <h3 className="descTitle">
+                            {title}
+                        </h3>
+                        <p>
+                        {desc}
+                        </p>
+                        <div>
+                        {
+                            Array.from({ length: stars }, (_, index) => (
+                                <span style={{ color:'#D96417', display:'inline'}}>
+                                    <FontAwesomeIcon icon={faStar} style={{color: "#D96417"}} />
+                                </span>
+                            ))
+                        }
+                        {
+                            Array.from({ length: 5-stars }, (_, index) => (
+                                <span style={{ color:'#D96417', display:'inline'}}>
+                                    <FontAwesomeIcon icon={faStarRegular} style={{color: "#D96417",}} />
+                                </span>
+                            ))
+                        }
+                        <p style={{display:'inline', 'margin-left':'5px'}}>{rating}</p>
+                        </div>
                     </div>
                 </div>
-                <div className="rightMediaDesc">
-                    <h3 className="descTitle">
-                        Movie Title
-                    </h3>
-                    <p>
-                    Descriptive Text about the media described above. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                    </p>
-                    <div>
-                    {
-                        Array.from({ length: 5 }, (_, index) => (
-                            <span key={index} style={{ color:'#D96417', display:'inline'}}>
-                                <FontAwesomeIcon icon={faStar} style={{color: "#D96417"}} />
-                            </span>
-                        ))
-                    }
-                    {
-                        Array.from({ length: 5-5 }, (_, index) => (
-                            <span key={index} style={{ color:'#D96417', display:'inline'}}>
-                                <FontAwesomeIcon icon={faStarRegular} style={{color: "#D96417",}} />
-                            </span>
-                        ))
-                    }
+               <div className='YourPicks'>
+                    <h2>Cast</h2>
+                    <div className="YourPicksRows">
+                        <div className="row">
+                            {getCards(mediaType, data)}
+                        </div>
+                    </div>
+                </div> 
+                <div>
+                <div>
+                    <h2>Write a Review</h2>
+                    <div className="reviewForm" style={{'backgroundColor':color}}>
+                        <ReviewForm color={color}/>
+                    </div>
+                </div>
+                </div>
+                <div>
+                    <h2>User Reviews</h2>
+                    <div className='userReviews'>
+                        {genReviews(mediaType, color)}
                     </div>
                 </div>
             </div>
-            <div className='YourPicks'>
-                <h2>Cast</h2>
-                <div className='YourPicksRows castRows'>
-                    <div className='row'>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
+        );
+    } else 
+    {
+        return (
+            <div className="Home">
+                <div>
+                    <h2>Description</h2>
+                </div>
+                <div className="mediaDesc" style={{'backgroundColor':color}}>
+                    <div className="leftMediaDesc">
+                        <img src={imgUrl} alt="" className="tmpImage" style={{width:150, height: 150}}/>
+                        <div className="pillContainer">
+                            <Pill text={pill1}/>
+                            <Pill text={pill2}/>
+                            <Pill text={pill3}/>
+                            <Pill text={pill4}/>
+                        </div>
                     </div>
-                    <div className='row'>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
+                    <div className="rightMediaDesc">
+                        <h3 className="descTitle">
+                            {title}
+                        </h3>
+                        <p>
+                        {desc}
+                        </p>
+                        <div>
+                        {
+                            Array.from({ length: stars }, (_, index) => (
+                                <span key={index} style={{ 'margin-right':'3px', color:'#D96417', display:'inline'}}>
+                                    <FontAwesomeIcon icon={faStar} style={{color: "#D96417"}} />
+                                </span>
+                            ))
+                        }
+                        {
+                            Array.from({ length: 5-stars }, (_, index) => (
+                                <span key={index} style={{'margin-right':'3px', color:'#D96417', display:'inline'}}>
+                                    <FontAwesomeIcon icon={faStarRegular} style={{color: "#D96417",}} />
+                                </span>
+                            ))
+                        }
+                        <p style={{display:'inline', 'margin-left':'6px'}}>{rating}</p>
+                        </div>
                     </div>
-                    <div className='row'>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
-                        <SmallCard image={"#"} title={'Title'}/>
+                </div>
+                <div>
+                    <h2>Write a Review</h2>
+                    <div className="reviewForm" style={{'backgroundColor':color}}>
+                        <ReviewForm color={color}/>
+                    </div>
+                </div>
+                <div>
+                    <h2>User Reviews</h2>
+                    <div className='userReviews'>
+                        {genReviews(mediaType, color)}
                     </div>
                 </div>
             </div>
-            <div>
-                <h2>User Reviews</h2>
-                <div className='userReviews'>
-                    <UserReviews reviewer={"Random Reviewer"} title={"Review Title"} review={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."} stars={3}/>
-                    <UserReviews reviewer={"Random Reviewer"} title={"Review Title"} review={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."} stars={4}/>
-                    <UserReviews reviewer={"Random Reviewer"} title={"Review Title"} review={"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups."} stars={5}/>
-                </div>
-            </div>
-        </div>
-    );
+        );
+    }
 }
 
 export default MediaDescription;
