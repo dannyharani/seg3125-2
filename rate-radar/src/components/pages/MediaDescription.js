@@ -7,6 +7,7 @@ import {faStar as faStarRegular} from "@fortawesome/free-regular-svg-icons"
 import jsonData from './../../Data/data';
 import allRevData from './../../Data/reviews'
 import ReviewForm from "./../ReviewForm";
+import Back from "../Back";
 
 function getCards(type, data)
 {
@@ -37,6 +38,32 @@ function genReviews(type, color) {
     }
 
     return arr;
+}
+
+function getShadow(col) {
+  
+    if (col[0] == "#") {
+        col = col.slice(1);
+    }
+ 
+    var num = parseInt(col,16);
+ 
+    var r = (num >> 16) * 0.5;
+ 
+    if (r > 255) r = 255;
+    else if  (r < 0) r = 0;
+ 
+    var b = ((num >> 8) & 0x00FF) * 0.5;
+ 
+    if (b > 255) b = 255;
+    else if  (b < 0) b = 0;
+ 
+    var g = (num & 0x0000FF) * 0.5;
+ 
+    if (g > 255) g = 255;
+    else if (g < 0) g = 0;
+ 
+    return (g | (b << 8) | (r << 16)).toString(16);
 }
 
 function MediaDescription () {
@@ -89,14 +116,16 @@ function MediaDescription () {
 
     if(mediaType === 'movies' || mediaType === 'tv_shows')
     {
+        let shadow = getShadow(color);
         return (
             <div className="Home">
+                <Back />
                 <div>
                     <h2>Description</h2>
                 </div>
                 <div className="mediaDesc" style={{'backgroundColor':color}}>
                     <div className="leftMediaDesc">
-                        <img src={imgUrl} alt="" className="tmpImage" style={{width:150, height: 150}}/>
+                        <img src={imgUrl} title={"Cover image for " + title} alt={"Cover of " + title} className="tmpImage" style={{width:150, height: 150}}/>
                         <div className="pillContainer">
                             <Pill text={pill1}/>
                             <Pill text={pill2}/>
@@ -130,6 +159,13 @@ function MediaDescription () {
                         </div>
                     </div>
                 </div>
+                <div className="trailer">
+                    <h2>Trailers</h2>
+                <center>
+                    <iframe style={{boxShadow:'6px 6px 10px #' + shadow}} width="400" height="215" src="https://www.youtube.com/embed/KAOdjqyG37A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+                </center>
+                </div>
                <div className='YourPicks'>
                     <h2>Cast</h2>
                     <div className="YourPicksRows">
@@ -158,6 +194,7 @@ function MediaDescription () {
     {
         return (
             <div className="Home">
+                <Back />
                 <div>
                     <h2>Description</h2>
                 </div>

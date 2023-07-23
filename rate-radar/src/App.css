@@ -466,3 +466,21 @@ textarea {
   border-radius: 30px;
   margin-top: 15px;
 }
+
+.backBtn {
+  margin-left: 15px;
+  transform: translateY(15px);
+  display: block;
+  width: fit-content;
+}
+
+
+.trailer iframe {
+  text-align: center;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.trailer {
+  margin: auto;
+}

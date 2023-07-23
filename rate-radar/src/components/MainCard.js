@@ -46,7 +46,7 @@ function MainCard({mediaType, image, title, content, pill1, pill2, lang, isVisib
     return (
         <div className='cardHolder' style = {{ display: isVisible ? 'table-cell' : 'none'} }>
             <Card style = {{'backgroundColor':bgColor}} className="mainCard" onClick={routeChange}>
-                <Card.Img className="cardImage" style={{'boxShadow':shadow}} variant='top' src={image} />
+                <Card.Img title={"Cover image for " + title} alt={"Cover image for " + title} className="cardImage" style={{'boxShadow':shadow}} variant='top' src={image} />
                 <Card.Body className="cardContent">
                     <Card.Title className="cardTitle">{title}</Card.Title>
                     <Card.Text className="cardText">

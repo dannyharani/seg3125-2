@@ -41,7 +41,7 @@ function SmallCard({mediaType, image, title, lang, isVisible = true}) {
     {
         return (
             <Card className="smallCard" onClick={routeChange} style = {{ width: '230px', 'backgroundColor':bgColor}}>
-                <Card.Img className="smallCardImage" variant='left' src={image} />
+                <Card.Img alt={"Cover image for " + title} title={"Cover image for " + title} className="smallCardImage" variant='left' src={image} />
                 
                 <Card.Body className="smallCardContent">
                     <Card.Title className="smallCardTitle">{title}</Card.Title>
